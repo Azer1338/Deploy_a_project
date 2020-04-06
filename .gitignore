@@ -131,4 +131,5 @@ dmypy.json
 # Other
 .idea/
 .idea
-pur_beurre_apps/settings/production.py
+pur_beurre_project/.idea/
+
