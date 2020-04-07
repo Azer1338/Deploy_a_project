@@ -31,7 +31,7 @@ else:
 
 # Allow the access to
 if os.environ.get('ENV') == 'PRODUCTION':
-    ALLOWED_HOSTS = ['purbeurreazer.herokuapp.com']
+    ALLOWED_HOSTS = ['165.22.121.31']
 else:
     ALLOWED_HOSTS = []
 
@@ -91,13 +91,13 @@ WSGI_APPLICATION = 'pur_beurre_project.wsgi.application'
 DATABASES = {
     'default': {
         # on utilise l'adaptateur postgresql
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         # le nom de notre base de donnees creee precedemment
         'NAME': 'pur_beurre_db',
         # attention : remplacez par votre nom d'utilisateur
         'USER': 'azer',
         'PASSWORD': 'azerazer',
-        'HOST': 'local',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
