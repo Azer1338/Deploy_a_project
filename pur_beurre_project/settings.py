@@ -96,8 +96,8 @@ DATABASES = {
         'NAME': 'pur_beurre_db',
         # attention : remplacez par votre nom d'utilisateur
         'USER': 'azer',
-        'PASSWORD': 'azer',
-        'HOST': '',
+        'PASSWORD': 'azerazer',
+        'HOST': 'local',
         'PORT': '5432',
     }
 }
