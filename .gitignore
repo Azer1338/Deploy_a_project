@@ -132,4 +132,4 @@ dmypy.json
 .idea/
 .idea
 pur_beurre_project/.idea/
-
+pur_beurre_project/settings/production.py
