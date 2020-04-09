@@ -12,15 +12,13 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-import dj_database_url
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'yn)%cc*v0#1c^0_l646^f-ci9p^zb7cd-@1w7uof68(t7f(5mw')
+SECRET_KEY = 'yn)%cc*v0#1c^0_l646^f-ci9p^zb7cd-@1w7uof68(t7f(5mw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -130,3 +128,5 @@ STATIC_URL = '/static/'
 
 # Django debug toolbar
 INTERNAL_IPS = ['127.0.0.1']
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
