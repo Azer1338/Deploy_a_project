@@ -2,7 +2,10 @@ from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.shortcuts import render, redirect
 from .models import Aliment, UserLinkToAlimentsTable
+import logging
 
+# Get an instance of a logger
+logger = logging.getLogger(__name__)
 
 def search_view(request):
     """
@@ -11,6 +14,12 @@ def search_view(request):
     :return:
     """
 
+    # Create an event to Sentry
+    logger.info('New search', exc_info=True, extra= {
+        # Optionally passs a request and we'll grab any information we can
+        'request': request,
+        }
+        
     # Collect the User's request
     query = request.GET.get('userSearch')
 
