@@ -3,7 +3,6 @@ from django.shortcuts import render
 
 def index_view(request):
 
-    MAIS
     return render(request, 'main/index.html')
 
 
