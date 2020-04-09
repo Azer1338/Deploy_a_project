@@ -10,7 +10,7 @@ branches:
     only:
      - production
 
-before_script:
+before_install:
           - pip install -r travis_requirements.txt
 
 services:
