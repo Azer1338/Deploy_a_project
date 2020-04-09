@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'yn)%cc*v0#1c^0_l646^f-ci9p^zb7cd-@1w7
 DEBUG = True
 
 # Allow the access to
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['165.22.121.31']
 
 # Application definition
 AUTH_USER_MODEL = 'accounts.PurBeurreUser'
