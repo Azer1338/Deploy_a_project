@@ -18,7 +18,7 @@ def search_view(request):
     logger.info('New search', exc_info=True, extra= {
         # Optionally passs a request and we'll grab any information we can
         'request': request,
-        }
+        })
         
     # Collect the User's request
     query = request.GET.get('userSearch')
