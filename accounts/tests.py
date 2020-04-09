@@ -117,7 +117,7 @@ class MyUserTest(TestCase):
         return PurBeurreUser.objects.create_user(email=email, first_name=first_name, name=name, password=None)
 
     def test_myUser_creation(self):
-        u = self.create_myUser()
+        u = self.test_create_myUser()
         self.assertTrue(isinstance(u, PurBeurreUser))
 
 
