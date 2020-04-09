@@ -11,7 +11,7 @@ branches:
      - production
 
 before_install:
-        - pip install -r travis_requirements.txt
+        - pip install -r requirements.txt
 
 services:
           - postgresql
