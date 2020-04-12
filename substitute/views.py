@@ -17,7 +17,7 @@ def search_view(request):
     query = request.GET.get('userSearch')
 
     # Create an event to Sentry
-    capture_message(request, level="error")
+    capture_message("User's request is: {}".format(query), level="error")
 
     # Ensure that the query is filled
     if query:
